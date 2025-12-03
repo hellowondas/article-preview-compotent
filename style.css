@@ -104,39 +104,76 @@ body {
 
 
 .card-author {
-  margin-top: 2rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 1rem 2rem;
+}
+
+
+.author-flex {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  justify-content: start;
 }
 
 
 .author-info {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+  justify-content: center;
 }
 
 
-.author p {
-  font-size: 0.8125rem;
-  align-self: start;
-}
-
-
-.author-info .author-name {
+.author-info h4 {
+  color: var(--blue-300);
   font-weight: 700;
+  font-size: 0.8rem;
 }
 
 
-.publish-date {
-  position: relative;
-  bottom: 1.0625rem;
+.author-info p {
+  margin-top: 0;
+  color: var(--blue-300);
+  font-size: 0.8rem;
 }
 
 
-.share-it {
-  border-radius: 50%;
+.icon {
   background-color: var(--blue-100);
-  padding: 0.8125rem;
-  transform: scale(0.8);
+  padding: 0.9rem;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+
+ul li {
+  list-style: none;
+}
+
+
+.sh {
+  position: relative;
+  
+}
+
+
+.open-share {
+  display: none;
+  background-color: var(--blue-200);
+  
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  top: 1.25rem;
+  border-radius: 0 0 0.75rem 0.75rem;
 }
