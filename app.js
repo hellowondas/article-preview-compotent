@@ -2,6 +2,8 @@ const social = document.querySelector('.card-author');
 
 const icon = document.querySelector('.icon');
 
+const share = document.querySelector('.share-option');
+
 
 
 
@@ -22,5 +24,6 @@ const icon = document.querySelector('.icon');
 
 icon.addEventListener('click', () => {
   icon.classList.toggle('active');
+  social.classList.toggle('active');
 })
 

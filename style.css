@@ -108,6 +108,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem 1rem 2rem;
+  
+  position: relative;
 }
 
 
@@ -161,12 +163,9 @@ body {
 }
 
 
-.card-author {
-  position: relative;
-}
 
-
-.card-author .share-option {
+/*==== ACTIVE STATE ====*/
+.card-author.active .share-option {
   background-color: var(--blue-500);
   position: absolute;
   left: 0;
@@ -178,13 +177,18 @@ body {
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 0 0 0.75rem 0.75rem;
   
+  display: flex;
+}
+
+
+.card-author.active .author-flex {
   display: none;
 }
 
 
 .icon.active {
   background-color: var(--blue-300);
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 
@@ -218,6 +222,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 
 /* .card-author-active {
   position: relative;
