@@ -130,7 +130,7 @@ body {
 
 
 .author-info h4 {
-  color: var(--blue-300);
+  color: var(--blue-500);
   font-weight: 700;
   font-size: 0.8rem;
 }
@@ -145,14 +145,14 @@ body {
 
 .icon {
   background-color: var(--blue-100);
-  padding: 0.5rem;
+  padding: 0.39rem;
   border-radius: 50%;
   margin-top: 2rem;
   border: none;
 }
 
 
-.icon img {
+.share-it {
   width: 100%;
   height: 100%;
 }
@@ -163,6 +163,13 @@ body {
 }
 
 
+.share-option li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /*==== ACTIVE STATE ====*/
 .card-author.active .share-option {
   display: flex; /*shows when ACTIVE*/
@@ -171,7 +178,6 @@ body {
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
   bottom: 0;
   margin-top: 1rem;
   padding: 1rem 2rem 1rem 2rem;
@@ -191,7 +197,7 @@ body {
 
 
 .icon.active .share-it {
-  filter: brightness(0) invert(1);
+  fill: var(--white);
 }
 
 
@@ -269,7 +275,7 @@ body {
 
 .author-info h4,
 .author-info p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 
@@ -278,4 +284,42 @@ body {
 }
 
 
+.card-author.active .share-option {
+  border-radius: 0.71rem;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(20%);
+  /* padding: 2.5rem;
+  z-index: 2;
+  border: 2px solid red; */
+}
+
+
+.share-option {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.share-option span {
+  font-size: 1rem;
+  letter-spacing: 0.30rem;
+}
+
+
+.share-option li img {
+  width: 25px;
+  height: 25px;
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+}
 }
