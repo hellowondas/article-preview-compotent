@@ -48,7 +48,7 @@ Your users should be able to:
 
 - How to compress local images from `.jpeg` to `webp` to optimize web perfoma
 - Responsive layout techniques css grid and media queries
-- 
+- I understood how to toggle on and off `active` on a class to add the css rule to it.
 
 
 ## 🙏 Acknowledgements
