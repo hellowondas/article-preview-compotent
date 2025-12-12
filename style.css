@@ -228,7 +228,7 @@ body {
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 57rem) {
 .card {
   display: grid;
   grid-template-columns: 0.5fr 0.8fr;
@@ -327,7 +327,7 @@ body {
   border-right: 1.125rem solid transparent;
   border-top: 1.25rem solid var(--blue-500);
   position: absolute;
-  top: /* 0.3125rem; */ 2px;
+  top: 0.125rem;
   right: 2.5rem;
 }
 
