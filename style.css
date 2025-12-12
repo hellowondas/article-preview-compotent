@@ -129,14 +129,14 @@ body {
 }
 
 
-.author-info h4 {
+.author-info .name {
   color: var(--blue-500);
   font-weight: 700;
   font-size: 0.8rem;
 }
 
 
-.author-info p {
+.author-info .date {
   margin-top: 0;
   color: var(--blue-300);
   font-size: 0.8rem;
@@ -327,7 +327,7 @@ body {
   border-right: 1.125rem solid transparent;
   border-top: 1.25rem solid var(--blue-500);
   position: absolute;
-  top: 0.3125rem;
+  top: /* 0.3125rem; */ 2px;
   right: 2.5rem;
 }
 
